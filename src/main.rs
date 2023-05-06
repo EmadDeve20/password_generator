@@ -1,6 +1,5 @@
 use clap::Parser;
 use rand::Rng;
-use std::env;
 use password_generator::Args;
 
 fn main() {
