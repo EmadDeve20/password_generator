@@ -5,5 +5,5 @@ fn main() {
 
     let args = Args::parse();
 
-    println!("Password: {}", generate_password(args.length));
+    println!("Password: {}", generate_password(args.length, args.filter));
 }
