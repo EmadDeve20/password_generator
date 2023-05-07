@@ -14,6 +14,11 @@ pub struct Args {
     pub filter: String,
 }
 
+fn string_to_char_list(string: String) -> Vec<char> {
+    
+    string.chars().collect()
+} 
+
 fn get_characters() -> Vec<char> {
     vec!['a', 'b', 'c', 'd', 'e', 'f', 'g',
     'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't','u', 'v', 'w',
