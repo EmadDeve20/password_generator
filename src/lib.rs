@@ -19,7 +19,7 @@ fn string_to_char_list(string: String) -> Vec<char> {
     string.chars().collect()
 } 
 
-fn get_characters() -> Vec<char> {
+fn get_characters(char_list: Vec<char>) -> Vec<char> {
     vec!['a', 'b', 'c', 'd', 'e', 'f', 'g',
     'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't','u', 'v', 'w',
     'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
@@ -28,9 +28,9 @@ fn get_characters() -> Vec<char> {
     '=', '+', '`', '\'', '"','|', ';', ':', '>', '<', '.', '/', '?', '\\']
 }
 
-pub fn generate_password(len: u8) -> String {
+pub fn generate_password(len: u8, string: String) -> String {
     
-    let characters = get_characters();
+    let characters = get_characters(string_to_char_list(string));
     let mut password = String::new();
 
 
