@@ -17,3 +17,6 @@ or you can set your own length of password with -l or --length argument:
 
 ``` ./password_generator -l 20 ```
 
+also, you can filter your characters:
+
+``` ./password_generator -f "abcdefghijklmnopqrstuvwzyxl.><=(); ```
