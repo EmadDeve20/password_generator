@@ -8,6 +8,10 @@ pub struct Args {
     /// Length of Password
     #[arg(short, long, default_value_t = 8)]
     pub length: u8,
+
+    /// Filter Characters
+    #[arg(short, long, default_value_t = String::from(""))]
+    pub filter: String,
 }
 
 fn get_characters() -> Vec<char> {
