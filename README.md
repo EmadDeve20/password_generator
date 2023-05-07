@@ -19,4 +19,4 @@ or you can set your own length of password with -l or --length argument:
 
 also, you can filter your characters:
 
-``` ./password_generator -f "abcdefghijklmnopqrstuvwzyxl.><=(); ```
+``` ./password_generator -f "abcdefghijklmnopqrstuvwzyxl.><=();" ```
